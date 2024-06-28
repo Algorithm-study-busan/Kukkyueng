@@ -26,6 +26,7 @@ int main()
         result += "+\n";
         //cout << "Push " << i << '\n';
 
+        // 다른게 나올 때 까지 POP을 해야하니 반복문 돌려
         while (nums[curIdx] == s.top())
         {
             //cout << "Pop " << i << '\n';
@@ -33,6 +34,7 @@ int main()
             result += "-\n";
             curIdx += 1;
 
+            // 예외 처리를 해줘야 해
             if (s.empty() || curIdx >= n) break;
         }
     }
